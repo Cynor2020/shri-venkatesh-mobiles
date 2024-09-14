@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop Website</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        html {
+            height: 100%;
+            background-color: rgb(0, 0, 0);
+        }
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+            align-items: center;           
+        }
+        header{
+            display: flex;
+            background-color: #000000;
+            color: rgb(0, 0, 0);
+            justify-content: space-between;
+        }
+        footer{
+            align-items: center;
+            align-content: center;
+            display: flex;
+            background-color: #000000;
+            color: rgb(0, 0, 0);
+            justify-content: center;
+        }
+        .main{
+            display: grid;
+            gap: 0px;
+            justify-content: center;
+            
+            
+        }
+        .first{
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: rgba(47, 2, 73, 0.199);
+            height:200px;
+            width: 190px;
+        }
+        a {
+            position: relative;
+            display: inline-block;
+            padding: 10px 13px;
+            color: #ffffff;
+            font-size: 16px;
+            text-decoration: none;
+            text-transform: uppercase;
+            overflow: hidden;
+            transition: 0.5s;
+            margin-top: 40px;
+            letter-spacing: 4px;
+        }
+        a span {
+            position: absolute;
+            display: block;
+        }
+        
+        a span:nth-child(1) {
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, #6cd944);
+            animation: btn-anim1 1s linear infinite;
+        }
+        
+        @keyframes btn-anim1 {
+            0% {
+                left: -100%;
+            }
+            50%,
+            100% {
+                left: 100%;
+            }
+        }
+        
+        a span:nth-child(2) {
+            top: -100%;
+            right: 0;
+            width: 2px;
+            height: 100%;
+            background: linear-gradient(180deg, transparent, #0bccbf);
+            animation: btn-anim2 1s linear infinite;
+            animation-delay: 0.25s;
+        }
+        
+        @keyframes btn-anim2 {
+            0% {
+                top: -100%;
+            }
+            50%,
+            100% {
+                top: 100%;
+            }
+        }
+        
+        a span:nth-child(3) {
+            bottom: 0;
+            right: 100%;
+            width: 100%;
+            height: 2px;
+            background: linear-gradient(270deg, transparent, #e90404);
+            animation: btn-anim3 1s linear infinite;
+            animation-delay: 0.5s;
+        }
+        
+        @keyframes btn-anim3 {
+            0% {
+                right: -100%;
+            }
+            50%,
+            100% {
+                right: 100%;
+            }
+        }
+        
+        a span:nth-child(4) {
+            bottom: -100%;
+            left: 0;
+            width: 2px;
+            height: 100%;
+            background: linear-gradient(360deg, transparent, #7f0577);
+            animation: btn-anim4 1s linear infinite;
+            animation-delay: 0.75s;
+        }
+        
+        @keyframes btn-anim4 {
+            0% {
+                bottom: -100%;
+            }
+            50%,
+            100% {
+                bottom: 100%;
+            }
+        }
+        img{
+            width: 200px;
+            height: 100px;
+        }
+        .contact{
+            border-radius: 15px;
+            width: 200px;
+            height: 100px;
+            background-color: #fff;
+            display: flex;
+            align-items: center;
+            border: solid rgb(220, 230, 47) 5px; 
+        }
+        .coc{
+            font-style: bold;
+            padding: 6px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content:center ;
+            align-content: center;
+            gap: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header style="background-color: black">
+        <img style="height: 45px; width: 90px;" src="logo.png" alt="" srcset="">
+        <img style="height: 45px; width: 40px;" src="wa.png" onclick="location.href='https://wa.me/qr/PJP7RC4JCCIIO1';">
+
+    </header>
+    <div class="main">
+        <div class="first">
+            <a href="">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>Screen Replacement
+            </a>
+            <a href="">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>Motherboard Repair
+            </a>
+        </div>
+        <div class="first">
+            <a href="">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>Battery Replacement
+            </a>
+            <a href="">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>Water Damage Repair
+            </a>
+        </div> 
+        <div class="first">
+            <a href="">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>IC Level Repairing
+            </a>
+            <a href="">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>Charger, Covers, Recharge
+            </a>
+        </div>
+        <div class="first">
+            <a href="">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>Blutooth Headphones
+            </a>
+            <a href="">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>Airbuds, New Sim
+            </a>
+        </div>
+        <div class="brand">
+            <h3 style="color: white;">Brands We Repair</h3>
+            <img src="s.png" alt="Server Slow">
+        </div>
+        <div class="contactheading">
+            <h3 style="color: white;">Our Promises</h3>
+        </div>
+        <div class="contact">
+            <div class="cof">
+                <h5>Lowest Price</h5>
+                <h5>Quality Repairing</h5> 
+                <h5>Satisfaction Guaranteed</h5>  
+            </div>
+        </div>
+        <div class="contactheading">
+            <h3 style="color: white;">Our Happy Clients</h3>
+        </div>
+        <div class="contact">
+            <div class="cof">
+                <h2>1000+</h2>
+                <!-- <h5>Quality Repairing</h5> 
+                <h5>Satisfaction Guaranteed</h5>   -->
+            </div>
+        </div>
+        <div class="contactheading">
+            <h3 style="color: white;">Contact Us !</h3>
+        </div>
+        <div class="contact">
+            <div class="co">
+                <h7>9970363308</h7>
+                <h7>7040616166</h7>
+                 <div class="coc">
+                    <img src="insta.png" style="height: 20px; width: 20px;" onclick="location.href='https://www.instagram.com/shree_venkatesh_mobiles96?igsh=YzljYTk1ODg3Zg==';"> 
+                    <img src="fb.png" style="height: 20px; width: 20px;" onclick="location.href='https://www.facebook.com/prasad.wani.980';"> 
+                    <img src="wa.png" style="height: 25px; width: 25px;" onclick="location.href='https://wa.me/qr/PJP7RC4JCCIIO1';">
+                    <img src="map.png" style="height: 18px; width: 18px;" onclick="location.href='https://maps.app.goo.gl/B6sciTkQjc9YCpQ28';">  
+                 </div>   
+            </div>
+            
+        </div>
+    </div>
+    <div>
+        <a href=""></a>
+    </div>
+    <footer style="background-color: #000000; color: white; font-size: 10px;">
+        Copyright &copy; 2024 CYNOR. All Rights Reserved.          
+    </footer>
+    <footer style="background-color: #000000; color: white; font-size: 10px;">
+        <img src="cynor.png" style="height: 25px; width: 20px;" onclick="location.href='https://github.com/Cynor2020/NIT-Clg';"> 
+        Developed By CYNOR          
+    </footer>
+</body>
+</html>
